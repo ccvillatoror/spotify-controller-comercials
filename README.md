@@ -38,13 +38,19 @@ Los sonidos fueron descargados de [Freesound](https://freesound.org/).
 - Spootify no está abierto.
 - Se está corriendo muchas veces sin esperar un poco de tiempo.
 
-## Mejoras a futuro
+## Mejoras a futuro (no en orden de preferencia)
 Adecuar el comportamiento del programa a si Spotify está abierto o no, en pausa o no.
 
 Mejorar el manejo de credenciales, de una forma más segura que escribirlos en el código.
 
-Agregarle una interfaz gráfica, drag and drop para agregar más pistas de audio, pantalla para agregar credenciales de la API de Spotify, que te digan si ya van a caducar.
+Agregarle una interfaz gráfica, _drag and drop_ para agregar más pistas de audio, pantalla para agregar credenciales de la API de Spotify, que te digan si ya van a caducar.
 
-Buscar una manera de que actualice las credenciales automáticamente.
+Buscar una manera de que actualice las credenciales automáticamente. 
+
+También actualizar el **token**, que caduca cada hora, sin cerrar el programa.
 
 Mejorar el manejo de errores del programa.
+
+Otro caso de uso que puede ser implementado: alarma. Que reproduzca música a cierta hora de la mañana, con un Alexa.
+
+Considerar cambiar `playsound3` por `pygame` para reproducir el comercial.
