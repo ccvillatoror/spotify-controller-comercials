@@ -1,10 +1,13 @@
 import spotipy
 import requests
+import os
 from spotipy.oauth2 import SpotifyOAuth
+from dotenv import load_dotenv
 
-# Spotify credentials (change for a more secure hadeling)
-client_id = ''
-client_secret = ''
+# Spotify credentials saved as environmental variables
+load_dotenv()
+client_id = os.environ.get('SPOTIFY_CLIENT_ID')
+client_secret = os.environ.get('SPOTIFY_CLIENT_SECRET')
 redirect_uri = 'http://127.0.0.1:3000'
 
 # scopes for Remote control playback, Get Available Devices, Pause playback
